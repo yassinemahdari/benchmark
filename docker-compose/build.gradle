@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.avast.gradle:gradle-docker-compose-plugin:0.16.9"
+    }
+}
+
+apply plugin: 'docker-compose'
+
+dockerCompose {
+    broker {
+        useComposeFiles = ['broker.yaml']
+        projectName = 'sample-kafka'
+    }
+    elk {
+        useComposeFiles = ['elk.yaml']
+        projectName = 'sample-elk'
+    }
+}

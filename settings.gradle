@@ -1,0 +1,6 @@
+rootProject.name = 'benchmark'
+
+include 'kafka-producer'
+include 'kafka-consumer'
+include 'docker-compose'
+include 'protobuf-definition'

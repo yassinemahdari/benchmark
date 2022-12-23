@@ -1,0 +1,7 @@
+server:
+  port: 8090
+
+spring:
+  elasticsearch:
+    username: elastic
+    password: b*MfoL7*Cu3tbdwt8n-r
